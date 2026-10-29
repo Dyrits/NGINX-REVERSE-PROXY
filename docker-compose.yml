@@ -1,20 +1,20 @@
 services:
   comments-api:
-    image: node:20-alpine
+    image: node:26.13.0-alpine
     working_dir: /app
     volumes:
       - ./comments-api:/app
     command: ["sh", "-c", "npm install && npm run dev"]
 
   users-api:
-    image: node:20-alpine
+    image: node:26.13.0-alpine
     working_dir: /app
     volumes:
       - ./users-api:/app
     command: ["sh", "-c", "npm install && npm run dev"]
 
   posts-api:
-    image: node:20-alpine
+    image: node:26.13.0-alpine
     working_dir: /app
     volumes:
       - ./posts-api:/app
